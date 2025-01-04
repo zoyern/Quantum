@@ -1,6 +1,7 @@
-# THIS IS NOTE CHECK DOCS FOR IMAGES AND EXEMPLES
+#THIS IS NOTE CHECK DOCS FOR IMAGES AND EXEMPLES
 
-```
+```bash
+
 theta et phi 0 ,0 intensité == 100% -> 0
 theta et phi 0 ,0 == 100% -> 0
 1 Q bit = (1,0)  (100% de te donné 0 et 0% de te donné 1)
