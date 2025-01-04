@@ -1,0 +1,40 @@
+cmake_minimum_required(VERSION {{CMAKEVER}})
+project({{NAME}})
+
+# Définir le standard C++
+set(CMAKE_CXX_STANDARD 17)
+
+# Rechercher Vulkan et SDL2
+find_package(Vulkan REQUIRED glslc glslangValidator)
+find_package(SDL2 REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+# Vérifier si le répertoire QPP existe
+if(EXISTS ${CMAKE_SOURCE_DIR}/../{{LIBS_DIR}}/qpp/include)
+    include_directories(
+		${CMAKE_SOURCE_DIR}/../{{LIBS_DIR}}/qpp/include
+		${CMAKE_SOURCE_DIR}/../{{LIBS_DIR}}/qpp/qasmtools/include
+	)
+    message("| libs/qpp included !")
+endif()
+
+# Ajouter les répertoires d'inclusion
+include_directories(
+    ${Vulkan_INCLUDE_DIRS}
+    ${SDL2_INCLUDE_DIRS}
+	${EIGEN3_INCLUDE_DIR}
+    ${CMAKE_SOURCE_DIR}/../{{INCLUDE_DIR}}
+)
+
+# Rechercher tous les fichiers source
+file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR}/../{{SRC_DIR}}/*.cpp)
+message(STATUS "SOURCES trouvés : ${SOURCES}")
+
+# Création de l'exécutable
+add_executable({{NAME}} ${SOURCES})
+
+# Définir les propriétés de sortie
+set_target_properties({{NAME}} PROPERTIES OUTPUT_NAME ${CMAKE_SOURCE_DIR}/../{{NAME_OUT}})
+
+# Lier les bibliothèques nécessaires
+target_link_libraries({{NAME}} Vulkan::Vulkan ${SDL2_LIBRARIES} Eigen3::Eigen )
