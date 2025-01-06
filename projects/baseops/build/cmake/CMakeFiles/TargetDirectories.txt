@@ -1,0 +1,3 @@
+/mnt/c/Users/zoyer/Desktop/Projects/Quantum/projects/baseops/build/cmake/CMakeFiles/baseops.dir
+/mnt/c/Users/zoyer/Desktop/Projects/Quantum/projects/baseops/build/cmake/CMakeFiles/edit_cache.dir
+/mnt/c/Users/zoyer/Desktop/Projects/Quantum/projects/baseops/build/cmake/CMakeFiles/rebuild_cache.dir

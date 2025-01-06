@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/baseops.dir/mnt/c/Users/zoyer/Desktop/Projects/Quantum/projects/baseops/src/Baseops/Baseops.cpp.o CMakeFiles/baseops.dir/mnt/c/Users/zoyer/Desktop/Projects/Quantum/projects/baseops/src/main.cpp.o -o /mnt/c/Users/zoyer/Desktop/Projects/Quantum/projects/baseops/build/../quantum  /usr/lib/x86_64-linux-gnu/libvulkan.so /usr/lib/x86_64-linux-gnu/libSDL2.so 
