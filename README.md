@@ -87,9 +87,7 @@ Absorption (Ombre)			|	Amplitude = 0 (pixel noir ou absorbé).
 Diffusion (Verre dépoli)	|	Modifie la phase et répartit l’intensité.
 Réfraction (Eau, lentille)	|	Change direction et vitesse (effet lentille).
 -------------------------------------------------------------
-```
 
-```bash
 Qubit et Superposition
 1. Définitions Initiales :
 
@@ -189,7 +187,6 @@ Combinaison (φ Energy)	Amplitude	θ (°)	φ (°)	Probabilité (%)
 -------------------------------------------------------------
 0.0 × 1.0	0.50	90.00	90.00	50.00
 -------------------------------------------------------------
-```
 
 
 
@@ -362,3 +359,5 @@ actuellement j'ai un code simple mais je voudrais l'appeler Qrn et faire en sort
 ok reprend de 0 tu me fais le meme code depuis tout a l'heure et je ne l'aime pas oublie tout et on reprend garde juste les problématique en tete car ce sera les meme je veux definir avec red("FF0000"//convertie en point sur la sphere de bosh en fonction de size : 0, 256 et quartil 3 qui donne 16777216 possibilité
 
 l'idée est que si je fais Qrn char_c('a'//converti en point sur la sphere, 0, 127); // se defini par defaut a 1 si aucun quartil est mis et je pourrais convertir a par autre chose mais le mieux serait de creer ma propre table ascci en qbit par exemple en faisant que a z soit 0 25 premier quartil  0 25 second quartil et 10 troisiemme quartil comme ca je pourrais literramement avoir le type de donné avec les étage que je veux et leurs inverse fonctionnerais toujours donc a deviendrais z avec une rotation de quartil je pourrais avoir que a est aussi A et avec une autre A est aussi 0
+
+```
